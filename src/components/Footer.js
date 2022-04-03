@@ -29,10 +29,10 @@ const FootWrapper = styled.div`
     width: 100%;
     max-height: 50px;
     //padding: 1rem 1.5rem;
-    background: var(--thirdSiteColor);
-    border-bottom: 5px solid var(--fifthSiteColor);
+    background: var(--primarySiteColor);
+    border-bottom: 5px solid var(--secondarySiteColor);
     z-index: 999;
-    color: var(--mainWhite);
+    color: var(--lightGrey);
   }
 
   @media screen and (max-width: 500px) {

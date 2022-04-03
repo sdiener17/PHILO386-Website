@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 //import mainLogo from "../images/mainLogo.jpg";
 import { useNavigate } from "react-router-dom";
+import NavBar from "./NavBar";
 
 export default function Header() {
   document.body.style.margin = 0;
@@ -12,7 +13,8 @@ export default function Header() {
     <PageWrapper>
       <div className="headerMain">
         {/* <img src={mainLogo} className="logo" alt="GURPS Book image"></img> */}
-        <div className="headerTitle">Piracy</div>
+        <div className="headerTitle">Intellectual Property</div>
+        <NavBar/>
       </div>
     </PageWrapper>
   );
@@ -23,8 +25,8 @@ const PageWrapper = styled.nav`
   position: sticky;
   top: 0;
   padding: 1rem 1.5rem;
-  background: var(--thirdSiteColor);
-  border-bottom: 5px solid var(--fifthSiteColor);
+  background: var(--primarySiteColor);
+  border-bottom: 5px solid var(--secondarySiteColor);
   z-index: 999;
   /* width: 100%; */
   margin: 0;
@@ -39,7 +41,7 @@ const PageWrapper = styled.nav`
   }
   .headerTitle {
     font-size: 2.5rem;
-    color: white;
+    color: var(--lightGrey);
     text-transform: uppercase;
     letter-spacing: 0.12rem;
   }
@@ -48,7 +50,7 @@ const PageWrapper = styled.nav`
     align-items: left;
     flex-direction: column;
     font-size: 1rem;
-    color: white;
+    color: var(--lightGrey);
   }
   .logo {
     height: 50%;
