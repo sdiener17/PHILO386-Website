@@ -10,8 +10,11 @@ import InformationPage from "./components/informationPage/InformationPage";
 import NavBar from "./components/NavBar";
 import SurveyPage from "./components/surveypage/SurveyPage";
 import BibliographyPage from "./components/bibliographyPage/BibliographyPage";
+import SurveyResults from "./components/surveypage/SurveyResults";
 
 export default function App() {
+  const [isSurveySubmitted, setIsSurveySubmitted] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]);
 
   return (
     <PageWrapper>
@@ -28,7 +31,7 @@ export default function App() {
               />
               <Route
                 exact path="/survey"
-                element={<SurveyPage/>}
+                element={<SurveyPage setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
               />
               <Route
                 exact path="/information"
@@ -38,6 +41,12 @@ export default function App() {
                 exact path="/bibliography"
                 element={<BibliographyPage/>}
                 />
+                {isSurveySubmitted &&(
+                  <Route
+                    exact path="/surveyresults"
+                    element={<SurveyResults userAnswers={userAnswers}/>}
+                    />
+                )}
 
             </Routes>
           </div>
@@ -56,6 +65,7 @@ const PageWrapper = styled.nav`
   .contentWrapper {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
+    justify-content:center;
   }
 `;

@@ -1,6 +1,7 @@
 :root {
   --primarySiteColor: #25456e;
   --secondarySiteColor: #9fa3be;
+  --darkSiteColor: #1d3350;
   --thirdSiteColor: #6166b3;
   --secondThirdSiteColor: #373cab;
   --fourthSiteColor: #4ab565;
@@ -17,6 +18,10 @@
 
 .App {
   text-align: center;
+}
+
+.marginBottom{
+  margin-bottom: 60px;
 }
 
 html,
