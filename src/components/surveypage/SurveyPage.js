@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import { questions } from "../../data/questions";
 import SurveyQuestion from "./SurveyQuestion";
 
 const userAnswerData =
@@ -30,8 +31,8 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
      return(
         <PageWrapper>
             <div className="surveyTitle">Intellectual Property Survey</div>
-            <SurveyQuestion questionText={surveyQuestion1} setRadioValue={setRadioValueQ1} nameOfGroup="group1"/>
-            <SurveyQuestion questionText={surveyQuestion2} setRadioValue={setRadioValueQ2} nameOfGroup="group2"/>
+            <SurveyQuestion questionText={questions[0].questionText} setRadioValue={setRadioValueQ1} nameOfGroup="group1"/>
+            <SurveyQuestion questionText={questions[1].questionText} setRadioValue={setRadioValueQ2} nameOfGroup="group2"/>
             <button className="submitButton" onClick={handleSubmitClick}>Submit</button>
             <div className="marginBottom"/>
         </PageWrapper>

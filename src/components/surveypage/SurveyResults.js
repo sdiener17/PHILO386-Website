@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { questions } from "../../data/questions";
 import SingleSurveyResult from "./SingleSurveyResult";
 
 export default function SurveyResults({userAnswers}) {
@@ -12,15 +13,10 @@ export default function SurveyResults({userAnswers}) {
   return (
     <PageWrapper>
       <div className="marginTopPie" />
-      <div className="dataContainer">
-        <div className="questionTitle">Is this a question?</div>
-        <div className="smallDataContainer">
-            <SingleSurveyResult data={dataQuestion1} />
-            <div>Your answer: {userAnswers.q1Answer}</div>
-        </div>
+        {questions.map((item)=>
+          <SingleSurveyResult question={item.questionText} data={item.questionData} userAnswer={userAnswers.q1Answer} />
+        )}
         
-
-      </div>
 
       <div className="marginBottom" />
       <div className="marginBottom" />
