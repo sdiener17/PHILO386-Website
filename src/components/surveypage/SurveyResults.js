@@ -27,7 +27,7 @@ export default function SurveyResults({userAnswers}) {
 const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
-
+  margin-left:40px;
   .marginTopPie {
     margin-bottom: 10px;
   }

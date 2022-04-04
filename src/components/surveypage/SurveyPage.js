@@ -15,7 +15,7 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
     let navigate = useNavigate();
     const [surveyQuestion1, setSurveyQuestion1] = useState("Is this a question?");
     const [radioValueQ1, setRadioValueQ1] = useState(null);
-    const [surveyQuestion2, setSurveyQuestion2] = useState("This is a really very long question. Of that I am quite sure. So I just wanted to ask you, is blue your most favorite color?");
+    const [surveyQuestion2, setSurveyQuestion2] = useState("");
     const [radioValueQ2, setRadioValueQ2] = useState(null);
 
 

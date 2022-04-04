@@ -28,23 +28,28 @@ export default function App() {
                 exact
                 path="/"
                 element={<HomePage/>}
+                className="routeCenter"
               />
               <Route
                 exact path="/survey"
                 element={<SurveyPage setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
+                className="routeCenter"
               />
               <Route
                 exact path="/information"
                 element={<InformationPage/>}
+                className="routeCenter"
               />
               <Route
                 exact path="/bibliography"
                 element={<BibliographyPage/>}
+                className="routeCenter"
                 />
                 {isSurveySubmitted &&(
                   <Route
                     exact path="/surveyresults"
                     element={<SurveyResults userAnswers={userAnswers}/>}
+                    className="routeLeft"
                     />
                 )}
 
@@ -62,10 +67,18 @@ const PageWrapper = styled.nav`
   }
   //display:flex;
   height: 100%;
+  .routeLeft{
+    display:flex;
+    justify-content: left !important;
+  }
+  .routeCenter{
+    display:flex;
+    justify-content: center;
+  }
   .contentWrapper {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content:center;
+    justify-content:center; */
   }
 `;
