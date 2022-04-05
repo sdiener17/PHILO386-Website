@@ -20,7 +20,7 @@ export default function App() {
     <PageWrapper>
 
         <Header />
-          <div className="contentWrapper">
+          <div >
             {/* <NavBar /> */}
             {/* <img src={logo} className="App-logo" alt="logo" /> */}
             <Routes>
@@ -28,28 +28,23 @@ export default function App() {
                 exact
                 path="/"
                 element={<HomePage/>}
-                className="routeCenter"
               />
               <Route
                 exact path="/survey"
                 element={<SurveyPage setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
-                className="routeCenter"
               />
               <Route
                 exact path="/information"
                 element={<InformationPage/>}
-                className="routeCenter"
               />
               <Route
                 exact path="/bibliography"
                 element={<BibliographyPage/>}
-                className="routeCenter"
                 />
                 {isSurveySubmitted &&(
                   <Route
                     exact path="/surveyresults"
                     element={<SurveyResults userAnswers={userAnswers}/>}
-                    className="routeLeft"
                     />
                 )}
 
@@ -73,7 +68,7 @@ const PageWrapper = styled.nav`
   }
   .routeCenter{
     display:flex;
-    justify-content: center;
+    justify-content: center !important;
   }
   .contentWrapper {
     /* display: flex;
