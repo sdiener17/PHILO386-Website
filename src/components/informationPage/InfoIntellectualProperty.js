@@ -2,9 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import TextAndImageCard from "./TextAndImageCard";
 import TextOnlyCard from "./TextOnlyCard";
+import TextAndImageRightCard from "./TextAndImageRightCard";
 import chef1 from "../../images/chef1.jpg";
 import {infoIPText} from "../../data/infoIPText";
 import law1 from "../../images/law1.jpg";
+import copyright1 from "../../images/copyright1.jpg";
+import computerCode2 from "../../images/computerCode2.jpg";
 
 export default function InformationPage(){
     return (
@@ -15,7 +18,10 @@ export default function InformationPage(){
             <h1>Modern Laws Relating to Intellectual Property</h1>
             <TextAndImageCard image={law1} text={infoIPText.text2}/>
             <h1>Copyright Law Details</h1>
-            <TextOnlyCard text={infoIPText.text3}/>
+            <TextAndImageRightCard image={copyright1} text={infoIPText.text3}/>
+            <h1>Justification For and Against Intellectual Property Laws</h1>
+            <TextAndImageRightCard image={computerCode2} text={infoIPText.text4}/>
+            <TextOnlyCard text={infoIPText.text5}/>
             <div className="marginBottom"/>
         </PageWrapper>
     )
