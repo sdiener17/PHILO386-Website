@@ -31,14 +31,30 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
 
     const handleSubmitClick = (e)=>{
         //validateForm();
-        //getUserAnswers();
-        setUserAnswers(userAnswerData);
+        constructUserAnswers();
+        //setUserAnswers(userAnswerData);
         setIsSurveySubmitted(true);
         navigate("/surveyresults");
     }
+
+    const constructUserAnswers = ()=>{
+        let tempAn = {
+            q1Answer:radioValueQ1,
+            q2Answer:radioValueQ2,
+            q3Answer:radioValueQ3,
+            q4Answer:radioValueQ4,
+            q5Answer:radioValueQ5,
+            q6Answer:radioValueQ6
+        }
+        setUserAnswers(tempAn);
+    }
+
      return(
         <PageWrapper>
             <div className="surveyTitle">Intellectual Property Survey</div>
+            <div className="textStuff">The purpose of this survey is to allow users to think for themselves what they think is ethical or not.
+                Once completed, you will be shown what other users answered to see how your answers line up.
+            </div>
             <SurveyQuestion questionText={questions[0].questionText} setRadioValue={setRadioValueQ1} nameOfGroup="group1"/>
             <SurveyQuestion questionText={questions[1].questionText} setRadioValue={setRadioValueQ2} nameOfGroup="group2"/>
             <SurveyQuestion questionText={questions[2].questionText} setRadioValue={setRadioValueQ3} nameOfGroup="group3"/>
@@ -71,5 +87,9 @@ const PageWrapper = styled.div`
     .submitButton:hover{
         background: var(--darkSiteColor);
 
+    }
+    .textStuff{
+        max-width:400px;
+        margin-bottom:20px;
     }
 `;

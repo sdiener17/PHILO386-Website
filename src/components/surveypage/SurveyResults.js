@@ -13,9 +13,15 @@ export default function SurveyResults({userAnswers}) {
   return (
     <PageWrapper>
       <div className="marginTopPie" />
-        {questions.map((item)=>
+        {/* {questions.map((item)=>
           <SingleSurveyResult question={item.questionText} data={item.questionData} userAnswer={userAnswers.q1Answer} />
-        )}
+        )} */}
+        <SingleSurveyResult question={questions[0].questionText} data={questions[0].questionData} userAnswer={userAnswers.q1Answer} />
+        <SingleSurveyResult question={questions[1].questionText} data={questions[1].questionData} userAnswer={userAnswers.q2Answer} />
+        <SingleSurveyResult question={questions[2].questionText} data={questions[2].questionData} userAnswer={userAnswers.q3Answer} />
+        <SingleSurveyResult question={questions[3].questionText} data={questions[3].questionData} userAnswer={userAnswers.q4Answer} />
+        <SingleSurveyResult question={questions[4].questionText} data={questions[4].questionData} userAnswer={userAnswers.q5Answer} />
+        <SingleSurveyResult question={questions[5].questionText} data={questions[5].questionData} userAnswer={userAnswers.q6Answer} />
         
 
       <div className="marginBottom" />
