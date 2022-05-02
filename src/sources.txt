@@ -8,6 +8,9 @@
 - [money1] Photo by Alexander Mils on Unsplash https://unsplash.com/photos/lCPhGxs7pww?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - [money2] Photo by Josh Appel on Unsplash https://unsplash.com/photos/NeTPASr-bmQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - [piggy1] Photo by Fabian Blank on Unsplash https://unsplash.com/photos/pElSkGRA2NU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [pirate1] Photo by Zoltan Tasi on Unsplash https://unsplash.com/photos/HTpAIzZRHvw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [game1] Photo by Sigmund on Unsplash https://unsplash.com/photos/By-tZImt0Ms?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [music1] Photo by Marius Masalar on Unsplash https://unsplash.com/photos/rPOmLGwai2w?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - 
 
   

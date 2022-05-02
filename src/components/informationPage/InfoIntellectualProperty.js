@@ -13,6 +13,7 @@ export default function InformationPage(){
     return (
         <PageWrapper>
             <div className="marginTop"/>
+            <h3>Intellectual Property Basics</h3>
             <h1>History</h1>
             <TextAndImageCard image={chef1} text={infoIPText.text1} />
             <h1>Modern Laws Relating to Intellectual Property</h1>
