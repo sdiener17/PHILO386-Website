@@ -91,17 +91,17 @@ const SideWrapper = styled.div`
   .sidebar-link:hover {
     border-radius: 10px;
     background: var(--secondarySiteColor);
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
     padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     text-decoration: none;
   }
   .lit {
     border-radius: 10px;
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
     background: var(--secondarySiteColor);
   }
   .unlit {
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
     background: none;
   }
 `;

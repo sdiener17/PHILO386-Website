@@ -41,7 +41,7 @@ const PageWrapper = styled.nav`
   }
   .headerTitle {
     font-size: 2.5rem;
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
     text-transform: uppercase;
     letter-spacing: 0.12rem;
   }
@@ -50,7 +50,7 @@ const PageWrapper = styled.nav`
     align-items: left;
     flex-direction: column;
     font-size: 1rem;
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
   }
   .logo {
     height: 50%;

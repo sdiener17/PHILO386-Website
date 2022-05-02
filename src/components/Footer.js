@@ -32,7 +32,7 @@ const FootWrapper = styled.div`
     background: var(--primarySiteColor);
     border-bottom: 5px solid var(--secondarySiteColor);
     z-index: 999;
-    color: var(--lightGrey);
+    color: var(--lighterGrey);
   }
 
   @media screen and (max-width: 500px) {
