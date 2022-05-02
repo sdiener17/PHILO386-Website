@@ -2,6 +2,8 @@
 - [computerCode1] Photo by Markus Spiske on Unsplash https://unsplash.com/photos/Skf7HxARcoc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - [favicon.ico] Photo by Volodymyr Hryshchenko on Unsplash https://unsplash.com/photos/V5vqWC9gyEU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - [chef1] Photo by Mae Mu on Unsplash https://unsplash.com/photos/rgRbqFweGF0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [law1] Photo by Sasun Bughdaryan on Unsplash https://unsplash.com/photos/e11Oa3kvx4c?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [copyright1] Photo by Markus Winkler on Unsplash https://unsplash.com/photos/9XfSFjcwGh0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 
   
