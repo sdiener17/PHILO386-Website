@@ -78,9 +78,9 @@ const SideWrapper = styled.div`
     transition-duration: 0.6s;
   }
   .sidebar-link:hover {
-    background: #9b9b9b;
+    background: var(--primarySiteColor);
     color: var(--mainWhite);
-    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    padding: 0.5rem 1.2rem 0.5rem 1.4rem;
     text-decoration: none;
     cursor: pointer;
   }

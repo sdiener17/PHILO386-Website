@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import InfoNavBar from "./InfoNavBar";
+import TextAndImageCard from "./TextAndImageCard";
 
 export default function InformationPage(){
     return (
         <PageWrapper>
-            <div>Hello from the main intellectual property component!</div>
+            <TextAndImageCard/>
         </PageWrapper>
     )
 }
