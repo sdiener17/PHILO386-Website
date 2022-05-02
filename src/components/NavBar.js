@@ -30,6 +30,18 @@ export default function NavBar() {
           </Link>
 
           <Link
+            to="/information"
+            className={
+              "sidebar-link " +
+              (currentPage.includes("information") ? "lit" : "unlit")
+            }
+            id="informationLink"
+            onClick={() => setCurrentPage("information")}
+          >
+            Information
+          </Link>
+
+          <Link
             to="/survey"
             className={
               "sidebar-link " + (currentPage === "survey" ? "lit" : "unlit")
@@ -39,17 +51,7 @@ export default function NavBar() {
           >
             Survey
           </Link>
-          <Link
-            to="/information"
-            className={
-              "sidebar-link " +
-              (currentPage === "information" ? "lit" : "unlit")
-            }
-            id="informationLink"
-            onClick={() => setCurrentPage("information")}
-          >
-            Information
-          </Link>
+          
           <Link
             to="/bibliography"
             className={

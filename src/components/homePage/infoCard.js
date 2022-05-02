@@ -4,10 +4,10 @@ import styled from "styled-components";
 export default function InfoCard({image, text}){
     return(
         <PageWrapper>
+            <div className="textWrap">
             <div className="imageContainer">
                 <img className="cardImage" src={image} ></img>
             </div>
-            <div className="textWrapper">
                 <div>{text}</div>
             </div>
             
@@ -21,9 +21,8 @@ const PageWrapper = styled.div`
     flex-direction:row;
     flex-wrap:wrap;
     align-items:center;
-    background-color: var(--lightGrey);
-    width:1100px;
-    padding:15px;
+    justify-content:center;
+
     margin-bottom:20px;
     .cardImage{
         margin:5px;
@@ -35,8 +34,16 @@ const PageWrapper = styled.div`
     .imageContainer{
         float:left;
     }
-    .textWrapper{
-        display:inline-block;
+    .textWrap{
+        display:flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:center;
+        max-width:1000px;
+        padding:10px;
+        background-color:var(--lightGrey);
+        border-radius: 10px;
+        font-size: 1.2rem;
     }
     .flex-item img{
         flex-grow:0;

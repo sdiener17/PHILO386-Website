@@ -1,5 +1,6 @@
 - [dogAtComputer.jpg] Photo by Cookie the Pom on Unsplash https://unsplash.com/photos/gySMaocSdqs?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 - [computerCode1] Photo by Markus Spiske on Unsplash https://unsplash.com/photos/Skf7HxARcoc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+- [favicon.ico] Photo by Volodymyr Hryshchenko on Unsplash https://unsplash.com/photos/V5vqWC9gyEU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 
   
