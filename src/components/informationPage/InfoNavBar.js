@@ -91,6 +91,6 @@ const SideWrapper = styled.div`
   }
   .unlit {
     color: var(--mainWhite);
-    background: var(--secondarySiteColor);
+    background: var(--lightGrey);
   }
 `;
