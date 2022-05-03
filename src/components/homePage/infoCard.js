@@ -30,6 +30,7 @@ const PageWrapper = styled.div`
         height:200px;
         border-radius:50%;
         border: 3px solid var(--primarySiteColor);
+        margin-right:15px;
     }
     .imageContainer{
         float:left;
