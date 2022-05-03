@@ -19,17 +19,17 @@ const PageWrapper = styled.div`
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    align-items:center;
-    justify-content:center;
+    /* align-items:center;
+    justify-content:center; */
 
     margin-bottom:20px;
 
     .textWrap{
-        display:flex;
+        /* display:flex;
         flex-direction:row;
         justify-content:flex-start;
-        align-items:center;
-        //max-width:1000px;
+        align-items:center; */
+        max-width:1000px;
         padding:10px;
         background-color:var(--lightGrey);
         border-radius: 10px;
