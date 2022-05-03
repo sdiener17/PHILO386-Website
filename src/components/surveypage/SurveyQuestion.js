@@ -48,6 +48,7 @@ const PageWrapper = styled.div`
   flex-wrap:wrap;
   border-radius: 10px;
   border: 3px solid var(--secondarySiteColor);
+  padding:5px;
   margin-bottom:20px;
   width: 400px;
 `;

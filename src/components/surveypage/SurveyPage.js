@@ -37,6 +37,11 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
         navigate("/surveyresults");
     }
 
+    const validateForm = () =>{
+        //setUserAnswers.map
+    }
+
+
     const constructUserAnswers = ()=>{
         let tempAn = {
             q1Answer:radioValueQ1,

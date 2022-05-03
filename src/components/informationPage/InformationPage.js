@@ -7,16 +7,14 @@ import InfoSoftwareAndIP from "./InfoSoftwareAndIP";
 import InforPiracy from "./InfoPiracy";
 
 export default function InformationPage(){
-    const [currentInfoPage, setCurrentInfoPage] = useState("informationhome");
+    const [currentInfoPage, setCurrentInfoPage] = useState("informationip");
     return (
         <PageWrapper>
             <InfoNavBar currentInfoPage={currentInfoPage} setCurrentInfoPage={setCurrentInfoPage}/>
 
-            {currentInfoPage === "informationhome" &&(
-                <InfoHomePage/>
-            )}
+            
 
-            {currentInfoPage === "informationip" &&(
+            {currentInfoPage === ("informationip") &&(
                 <div>
                     <InfoIntellectualProperty/>
                 </div>

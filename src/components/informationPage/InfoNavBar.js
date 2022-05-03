@@ -14,7 +14,7 @@ export default function InfoNavBar({currentInfoPage, setCurrentInfoPage}) {
 //   const [currentPage, setCurrentPage] = useState(
 //     pageName === "" ? "home" : pageName
 //   );
-  const [currentPage, setCurrentPage] = useState("informationhome");
+  //const [currentPage, setCurrentPage] = useState("informationhome");
   return (
     <SideWrapper>
       <ul>
