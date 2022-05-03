@@ -13,7 +13,7 @@ export default function InformationPage(){
     return (
         <PageWrapper>
             <div className="marginTop"/>
-            <h3>Software and Intellectual Property</h3>
+            <h3 className="mainHeader">Software and Intellectual Property</h3>
             <h1>Should Software Be Free?</h1>
             <TextAndImageCard image={money1} text={infoSTAIPText.text1}/>
             <h1>Why Software Should Be Free</h1>
@@ -39,5 +39,12 @@ const PageWrapper = styled.nav`
     }
     .marginBottom{
         margin-bottom:var(--marginBottom);
+    }
+    .mainHeader{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    h1{
+        font-size:20px;
     }
 `;

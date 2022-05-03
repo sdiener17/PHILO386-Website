@@ -20,7 +20,7 @@ const PageWrapper = styled.div`
     align-items:center;
     justify-content:center;
 
-    margin-bottom:20px;
+    margin-bottom:40px;
 
     .textWrap{
         display:flex;

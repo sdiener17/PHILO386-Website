@@ -35,7 +35,7 @@ const PageWrapper = styled.div`
     flex-wrap: wrap;
     border-bottom:5px solid var(--primarySiteColor);
     .pie{
-        fill: var(--yellowOne);
+        fill: var(--purpleOne);
     }
     .userAnswerDiv{
         margin-left:10px;

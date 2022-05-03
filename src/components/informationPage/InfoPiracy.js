@@ -39,4 +39,11 @@ const PageWrapper = styled.nav`
     .marginBottom{
         margin-bottom:var(--marginBottom);
     }
+    h3{
+        font-size:30px;
+        margin-bottom:10px;
+    }
+    h1{
+        font-size:20px;
+    }
 `;

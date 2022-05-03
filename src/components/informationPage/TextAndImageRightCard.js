@@ -24,7 +24,7 @@ const PageWrapper = styled.div`
     align-items:center;
     justify-content:center;
 
-    margin-bottom:20px;
+    margin-bottom:40px;
     .cardImage{
         margin:5px;
         width:200px;
