@@ -28,6 +28,7 @@ export default function Bibliography(){
             <TextWithLinkCard text={bibliography[15].text} link={bibliography[15].link}/>
             <TextWithLinkCard text={bibliography[16].text} link={bibliography[16].link}/>
             <TextWithLinkCard text={bibliography[17].text} link={bibliography[17].link}/>
+            <div className="theBottom">*This website was completed for a project for K-State's PHILO 386 class by Sarah Diener and Mason Phillips</div>
             <div className="marginBottom"/>
         </PageWrapper>
     )
@@ -57,5 +58,9 @@ const PageWrapper = styled.div`
         font-weight:bold;
         margin-bottom:20px;
         margin-top:20px;
+    }
+    .theBottom{
+        margin-top:10px;
+        font-size:1.2rem;
     }
 `;
