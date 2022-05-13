@@ -21,7 +21,7 @@ export default function SurveyResults({userAnswers}) {
         <SingleSurveyResult question={questions[2].questionText} data={questions[2].questionData} userAnswer={userAnswers.q3Answer} />
         <SingleSurveyResult question={questions[3].questionText} data={questions[3].questionData} userAnswer={userAnswers.q4Answer} />
         <SingleSurveyResult question={questions[4].questionText} data={questions[4].questionData} userAnswer={userAnswers.q5Answer} />
-        <SingleSurveyResult question={questions[5].questionText} data={questions[5].questionData} userAnswer={userAnswers.q6Answer} />
+        {/* <SingleSurveyResult question={questions[5].questionText} data={questions[5].questionData} userAnswer={userAnswers.q6Answer} /> */}
         
 
       <div className="marginBottom" />

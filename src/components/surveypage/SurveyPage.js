@@ -11,7 +11,7 @@ const userAnswerData =
         q3Answer:"yes"
     }
 
-export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
+export default function SurveyPage({userAnswers, setIsSurveySubmitted, setUserAnswers}){
     let navigate = useNavigate();
     const [surveyQuestion1, setSurveyQuestion1] = useState("Is this a question?");
     const [radioValueQ1, setRadioValueQ1] = useState(null);
@@ -25,12 +25,17 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
     const [radioValueQ5, setRadioValueQ5] = useState(null);
     const [surveyQuestion6, setSurveyQuestion6] = useState("");
     const [radioValueQ6, setRadioValueQ6] = useState(null);
+    const [isError, setIsError] = useState(false);
 
 
 
 
     const handleSubmitClick = (e)=>{
-        //validateForm();
+        //let invalid = validateForm();
+        // if(invalid===true){
+        //     setIsError(true);
+        //     return;
+        // }
         constructUserAnswers();
         //setUserAnswers(userAnswerData);
         setIsSurveySubmitted(true);
@@ -38,7 +43,16 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
     }
 
     const validateForm = () =>{
-        //setUserAnswers.map
+        let invalid = false;
+        // userAnswers.map((item)=>{
+        //     if(item.value === null){
+        //         invalid = true;
+        //     }
+        // })
+        if(radioValueQ1.checked ===false){
+            invalid = true;
+        }
+        return invalid;
     }
 
 
@@ -65,8 +79,12 @@ export default function SurveyPage({setIsSurveySubmitted, setUserAnswers}){
             <SurveyQuestion questionText={questions[2].questionText} setRadioValue={setRadioValueQ3} nameOfGroup="group3"/>
             <SurveyQuestion questionText={questions[3].questionText} setRadioValue={setRadioValueQ4} nameOfGroup="group4"/>
             <SurveyQuestion questionText={questions[4].questionText} setRadioValue={setRadioValueQ5} nameOfGroup="group5"/>
-            <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/>
+            {/* <SurveyQuestion questionText={questions[5].questionText} setRadioValue={setRadioValueQ6} nameOfGroup="group6"/> */}
+            {isError &&(
+                <div className="errorDiv">Please answer all questions.</div>
+            )}
             <button className="submitButton" onClick={handleSubmitClick}>Submit</button>
+            
             <div className="marginBottom"/>
         </PageWrapper>
     )
@@ -83,7 +101,7 @@ const PageWrapper = styled.div`
     }
     .submitButton{
         background: var(--primarySiteColor);
-        color: var(--lightGrey);
+        color: var(--lighterGrey);
         padding: 0.5rem 1.0rem;
         border-radius:5px;
         border: 2px solid var(--darkSiteColor);
@@ -96,5 +114,11 @@ const PageWrapper = styled.div`
     .textStuff{
         max-width:400px;
         margin-bottom:20px;
+    }
+    .marginBottom{
+        margin-bottom:var(--marginBottom);
+    }
+    .errorDiv{
+        color:red;
     }
 `;

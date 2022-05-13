@@ -31,7 +31,7 @@ export default function App() {
               />
               <Route
                 exact path="/survey"
-                element={<SurveyPage setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
+                element={<SurveyPage userAnswers={userAnswers} setIsSurveySubmitted={setIsSurveySubmitted} setUserAnswers={setUserAnswers}/>}
               />
               <Route
                 exact path="/information"
